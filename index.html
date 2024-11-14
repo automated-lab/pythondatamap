@@ -1,233 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Data Analysis Ecosystem</title>
-    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.15.0"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
 </head>
 <body>
-    <svg width="100%" height="100vh"></svg>
-    <script>markmap.autoLoader.render('markmap', `
-# Python Data Analysis Ecosystem
-## Core Python
-### Basics
-- Variables & Data Types
-- Control Flow
-- Functions
-- Classes & OOP
-- Error Handling
-- File I/O
-
-### Key Libraries
-- Collections
-- DateTime
-- OS
-- JSON
-- Regular Expressions
-
-## Data Analysis Stack
-### NumPy
-- Arrays
-- Mathematical Operations
-- Linear Algebra
-- Random Numbers
-- Array Manipulation
-
-### Pandas
-#### Data Structures
-- DataFrame
-- Series
-- Index
-
-#### Operations
-- Data Cleaning
-- Filtering
-- Grouping
-- Merging/Joining
-- Pivoting
-- Time Series
-
-#### I/O
-- CSV
-- Excel
-- SQL
-- JSON
-- API
-
-### Data Visualization
-#### Matplotlib
-- Basic Plots
-- Customization
-- Multiple Plots
-- Saving Figures
-
-#### Seaborn
-- Statistical Plots
-- Color Palettes
-- Distribution Plots
-- Regression Plots
-
-#### Plotly
-- Interactive Plots
-- Dashboards
-- Web Integration
-
-### Statistical Analysis
-#### SciPy
-- Statistical Tests
-- Optimization
-- Integration
-- Linear Algebra
-
-#### Statsmodels
-- Regression Models
-- Time Series Analysis
-- Statistical Tests
-- ANOVA
-
-## Machine Learning
-### Scikit-learn
-#### Preprocessing
-- Scaling
-- Encoding
-- Feature Selection
-- Dimensionality Reduction
-
-#### Models
-- Classification
-- Regression
-- Clustering
-- Model Selection
-
-#### Evaluation
-- Metrics
-- Cross-validation
-- Grid Search
-- Validation Curves
-
-## Web Development (Flask)
-### Basics
-- Routes
-- Templates
-- Forms
-- Database Integration
-- Authentication
-
-### Architecture
-#### MVC Pattern
-- Models
-- Views
-- Controllers
-
-#### Project Structure
-- Blueprints
-- Configuration
-- Extensions
-- Static Files
-- Templates
-
-### Database
-#### SQLAlchemy
-- Models
-- Relationships
-- Queries
-- Migrations
-
-#### Database Types
-- SQLite
-- PostgreSQL
-- MySQL
-
-### API Development
-- RESTful APIs
-- JSON Responses
-- Authentication
-- Rate Limiting
-- Documentation
-
-## Deployment (Heroku)
-### Setup
-- Heroku CLI
-- Git Integration
-- Requirements.txt
-- Procfile
-- Environment Variables
-
-### Database
-- Heroku Postgres
-- Database URLs
-- Migrations
-- Backups
-
-### Configuration
-#### Environment
-- Production vs Development
-- Config Variables
-- Add-ons
-- Logging
-
-#### Scaling
-- Dynos
-- Workers
-- Performance Monitoring
-
-### Maintenance
-- Updates
-- Logs
-- Backup
-- Security
-
-## Development Tools
-### Version Control
-- Git
-- GitHub
-- Branching
-- Collaboration
-
-### Virtual Environments
-- venv
-- pip
-- requirements.txt
-- dependency management
-
-### Testing
-#### Framework
-- unittest
-- pytest
-- coverage
-- mocking
-
-#### Types
-- Unit Tests
-- Integration Tests
-- Functional Tests
-- Load Tests
-
-### Documentation
-- Docstrings
-- Sphinx
-- Read the Docs
-- API Documentation
-
-## Best Practices
-### Code Quality
-- PEP 8
-- Type Hints
-- Linting
-- Code Reviews
-
-### Performance
-- Profiling
-- Optimization
-- Caching
-- Async/Await
-
-### Security
-- Input Validation
-- Authentication
-- Authorization
-- Data Protection
-    `)</script>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Python Data Analysis Ecosystem","children":[{"content":"Core Python","children":[{"content":"Basics","children":[{"content":"Variables &amp; Data Types","children":[],"payload":{"lines":"3,4"}},{"content":"Control Flow","children":[],"payload":{"lines":"4,5"}},{"content":"Functions","children":[],"payload":{"lines":"5,6"}},{"content":"Classes &amp; OOP","children":[],"payload":{"lines":"6,7"}},{"content":"Error Handling","children":[],"payload":{"lines":"7,8"}},{"content":"File I/O","children":[],"payload":{"lines":"8,10"}}],"payload":{"lines":"2,3"}},{"content":"Key Libraries","children":[{"content":"Collections","children":[],"payload":{"lines":"11,12"}},{"content":"DateTime","children":[],"payload":{"lines":"12,13"}},{"content":"OS","children":[],"payload":{"lines":"13,14"}},{"content":"JSON","children":[],"payload":{"lines":"14,15"}},{"content":"Regular Expressions","children":[],"payload":{"lines":"15,17"}}],"payload":{"lines":"10,11"}}],"payload":{"lines":"1,2"}},{"content":"Data Analysis Stack","children":[{"content":"NumPy","children":[{"content":"Arrays","children":[],"payload":{"lines":"19,20"}},{"content":"Mathematical Operations","children":[],"payload":{"lines":"20,21"}},{"content":"Linear Algebra","children":[],"payload":{"lines":"21,22"}},{"content":"Random Numbers","children":[],"payload":{"lines":"22,23"}},{"content":"Array Manipulation","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"18,19"}},{"content":"Pandas","children":[{"content":"Data Structures","children":[{"content":"DataFrame","children":[],"payload":{"lines":"27,28"}},{"content":"Series","children":[],"payload":{"lines":"28,29"}},{"content":"Index","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"26,27"}},{"content":"Operations","children":[{"content":"Data Cleaning","children":[],"payload":{"lines":"32,33"}},{"content":"Filtering","children":[],"payload":{"lines":"33,34"}},{"content":"Grouping","children":[],"payload":{"lines":"34,35"}},{"content":"Merging/Joining","children":[],"payload":{"lines":"35,36"}},{"content":"Pivoting","children":[],"payload":{"lines":"36,37"}},{"content":"Time Series","children":[],"payload":{"lines":"37,39"}}],"payload":{"lines":"31,32"}},{"content":"I/O","children":[{"content":"CSV","children":[],"payload":{"lines":"40,41"}},{"content":"Excel","children":[],"payload":{"lines":"41,42"}},{"content":"SQL","children":[],"payload":{"lines":"42,43"}},{"content":"JSON","children":[],"payload":{"lines":"43,44"}},{"content":"API","children":[],"payload":{"lines":"44,46"}}],"payload":{"lines":"39,40"}}],"payload":{"lines":"25,26"}},{"content":"Data Visualization","children":[{"content":"Matplotlib","children":[{"content":"Basic Plots","children":[],"payload":{"lines":"48,49"}},{"content":"Customization","children":[],"payload":{"lines":"49,50"}},{"content":"Multiple Plots","children":[],"payload":{"lines":"50,51"}},{"content":"Saving Figures","children":[],"payload":{"lines":"51,53"}}],"payload":{"lines":"47,48"}},{"content":"Seaborn","children":[{"content":"Statistical Plots","children":[],"payload":{"lines":"54,55"}},{"content":"Color Palettes","children":[],"payload":{"lines":"55,56"}},{"content":"Distribution Plots","children":[],"payload":{"lines":"56,57"}},{"content":"Regression Plots","children":[],"payload":{"lines":"57,59"}}],"payload":{"lines":"53,54"}},{"content":"Plotly","children":[{"content":"Interactive Plots","children":[],"payload":{"lines":"60,61"}},{"content":"Dashboards","children":[],"payload":{"lines":"61,62"}},{"content":"Web Integration","children":[],"payload":{"lines":"62,64"}}],"payload":{"lines":"59,60"}}],"payload":{"lines":"46,47"}},{"content":"Statistical Analysis","children":[{"content":"SciPy","children":[{"content":"Statistical Tests","children":[],"payload":{"lines":"66,67"}},{"content":"Optimization","children":[],"payload":{"lines":"67,68"}},{"content":"Integration","children":[],"payload":{"lines":"68,69"}},{"content":"Linear Algebra","children":[],"payload":{"lines":"69,71"}}],"payload":{"lines":"65,66"}},{"content":"Statsmodels","children":[{"content":"Regression Models","children":[],"payload":{"lines":"72,73"}},{"content":"Time Series Analysis","children":[],"payload":{"lines":"73,74"}},{"content":"Statistical Tests","children":[],"payload":{"lines":"74,75"}},{"content":"ANOVA","children":[],"payload":{"lines":"75,77"}}],"payload":{"lines":"71,72"}}],"payload":{"lines":"64,65"}}],"payload":{"lines":"17,18"}},{"content":"Machine Learning","children":[{"content":"Scikit-learn","children":[{"content":"Preprocessing","children":[{"content":"Scaling","children":[],"payload":{"lines":"80,81"}},{"content":"Encoding","children":[],"payload":{"lines":"81,82"}},{"content":"Feature Selection","children":[],"payload":{"lines":"82,83"}},{"content":"Dimensionality Reduction","children":[],"payload":{"lines":"83,85"}}],"payload":{"lines":"79,80"}},{"content":"Models","children":[{"content":"Classification","children":[],"payload":{"lines":"86,87"}},{"content":"Regression","children":[],"payload":{"lines":"87,88"}},{"content":"Clustering","children":[],"payload":{"lines":"88,89"}},{"content":"Model Selection","children":[],"payload":{"lines":"89,91"}}],"payload":{"lines":"85,86"}},{"content":"Evaluation","children":[{"content":"Metrics","children":[],"payload":{"lines":"92,93"}},{"content":"Cross-validation","children":[],"payload":{"lines":"93,94"}},{"content":"Grid Search","children":[],"payload":{"lines":"94,95"}},{"content":"Validation Curves","children":[],"payload":{"lines":"95,97"}}],"payload":{"lines":"91,92"}}],"payload":{"lines":"78,79"}}],"payload":{"lines":"77,78"}},{"content":"Web Development (Flask)","children":[{"content":"Basics","children":[{"content":"Routes","children":[],"payload":{"lines":"99,100"}},{"content":"Templates","children":[],"payload":{"lines":"100,101"}},{"content":"Forms","children":[],"payload":{"lines":"101,102"}},{"content":"Database Integration","children":[],"payload":{"lines":"102,103"}},{"content":"Authentication","children":[],"payload":{"lines":"103,105"}}],"payload":{"lines":"98,99"}},{"content":"Architecture","children":[{"content":"MVC Pattern","children":[{"content":"Models","children":[],"payload":{"lines":"107,108"}},{"content":"Views","children":[],"payload":{"lines":"108,109"}},{"content":"Controllers","children":[],"payload":{"lines":"109,111"}}],"payload":{"lines":"106,107"}},{"content":"Project Structure","children":[{"content":"Blueprints","children":[],"payload":{"lines":"112,113"}},{"content":"Configuration","children":[],"payload":{"lines":"113,114"}},{"content":"Extensions","children":[],"payload":{"lines":"114,115"}},{"content":"Static Files","children":[],"payload":{"lines":"115,116"}},{"content":"Templates","children":[],"payload":{"lines":"116,118"}}],"payload":{"lines":"111,112"}}],"payload":{"lines":"105,106"}},{"content":"Database","children":[{"content":"SQLAlchemy","children":[{"content":"Models","children":[],"payload":{"lines":"120,121"}},{"content":"Relationships","children":[],"payload":{"lines":"121,122"}},{"content":"Queries","children":[],"payload":{"lines":"122,123"}},{"content":"Migrations","children":[],"payload":{"lines":"123,125"}}],"payload":{"lines":"119,120"}},{"content":"Database Types","children":[{"content":"SQLite","children":[],"payload":{"lines":"126,127"}},{"content":"PostgreSQL","children":[],"payload":{"lines":"127,128"}},{"content":"MySQL","children":[],"payload":{"lines":"128,130"}}],"payload":{"lines":"125,126"}}],"payload":{"lines":"118,119"}},{"content":"API Development","children":[{"content":"RESTful APIs","children":[],"payload":{"lines":"131,132"}},{"content":"JSON Responses","children":[],"payload":{"lines":"132,133"}},{"content":"Authentication","children":[],"payload":{"lines":"133,134"}},{"content":"Rate Limiting","children":[],"payload":{"lines":"134,135"}},{"content":"Documentation","children":[],"payload":{"lines":"135,137"}}],"payload":{"lines":"130,131"}}],"payload":{"lines":"97,98"}},{"content":"Deployment (Heroku)","children":[{"content":"Setup","children":[{"content":"Heroku CLI","children":[],"payload":{"lines":"139,140"}},{"content":"Git Integration","children":[],"payload":{"lines":"140,141"}},{"content":"Requirements.txt","children":[],"payload":{"lines":"141,142"}},{"content":"Procfile","children":[],"payload":{"lines":"142,143"}},{"content":"Environment Variables","children":[],"payload":{"lines":"143,145"}}],"payload":{"lines":"138,139"}},{"content":"Database","children":[{"content":"Heroku Postgres","children":[],"payload":{"lines":"146,147"}},{"content":"Database URLs","children":[],"payload":{"lines":"147,148"}},{"content":"Migrations","children":[],"payload":{"lines":"148,149"}},{"content":"Backups","children":[],"payload":{"lines":"149,151"}}],"payload":{"lines":"145,146"}},{"content":"Configuration","children":[{"content":"Environment","children":[{"content":"Production vs Development","children":[],"payload":{"lines":"153,154"}},{"content":"Config Variables","children":[],"payload":{"lines":"154,155"}},{"content":"Add-ons","children":[],"payload":{"lines":"155,156"}},{"content":"Logging","children":[],"payload":{"lines":"156,158"}}],"payload":{"lines":"152,153"}},{"content":"Scaling","children":[{"content":"Dynos","children":[],"payload":{"lines":"159,160"}},{"content":"Workers","children":[],"payload":{"lines":"160,161"}},{"content":"Performance Monitoring","children":[],"payload":{"lines":"161,163"}}],"payload":{"lines":"158,159"}}],"payload":{"lines":"151,152"}},{"content":"Maintenance","children":[{"content":"Updates","children":[],"payload":{"lines":"164,165"}},{"content":"Logs","children":[],"payload":{"lines":"165,166"}},{"content":"Backup","children":[],"payload":{"lines":"166,167"}},{"content":"Security","children":[],"payload":{"lines":"167,169"}}],"payload":{"lines":"163,164"}}],"payload":{"lines":"137,138"}},{"content":"Development Tools","children":[{"content":"Version Control","children":[{"content":"Git","children":[],"payload":{"lines":"171,172"}},{"content":"GitHub","children":[],"payload":{"lines":"172,173"}},{"content":"Branching","children":[],"payload":{"lines":"173,174"}},{"content":"Collaboration","children":[],"payload":{"lines":"174,176"}}],"payload":{"lines":"170,171"}},{"content":"Virtual Environments","children":[{"content":"venv","children":[],"payload":{"lines":"177,178"}},{"content":"pip","children":[],"payload":{"lines":"178,179"}},{"content":"requirements.txt","children":[],"payload":{"lines":"179,180"}},{"content":"dependency management","children":[],"payload":{"lines":"180,182"}}],"payload":{"lines":"176,177"}},{"content":"Testing","children":[{"content":"Framework","children":[{"content":"unittest","children":[],"payload":{"lines":"184,185"}},{"content":"pytest","children":[],"payload":{"lines":"185,186"}},{"content":"coverage","children":[],"payload":{"lines":"186,187"}},{"content":"mocking","children":[],"payload":{"lines":"187,189"}}],"payload":{"lines":"183,184"}},{"content":"Types","children":[{"content":"Unit Tests","children":[],"payload":{"lines":"190,191"}},{"content":"Integration Tests","children":[],"payload":{"lines":"191,192"}},{"content":"Functional Tests","children":[],"payload":{"lines":"192,193"}},{"content":"Load Tests","children":[],"payload":{"lines":"193,195"}}],"payload":{"lines":"189,190"}}],"payload":{"lines":"182,183"}},{"content":"Documentation","children":[{"content":"Docstrings","children":[],"payload":{"lines":"196,197"}},{"content":"Sphinx","children":[],"payload":{"lines":"197,198"}},{"content":"Read the Docs","children":[],"payload":{"lines":"198,199"}},{"content":"API Documentation","children":[],"payload":{"lines":"199,201"}}],"payload":{"lines":"195,196"}}],"payload":{"lines":"169,170"}},{"content":"Best Practices","children":[{"content":"Code Quality","children":[{"content":"PEP 8","children":[],"payload":{"lines":"203,204"}},{"content":"Type Hints","children":[],"payload":{"lines":"204,205"}},{"content":"Linting","children":[],"payload":{"lines":"205,206"}},{"content":"Code Reviews","children":[],"payload":{"lines":"206,208"}}],"payload":{"lines":"202,203"}},{"content":"Performance","children":[{"content":"Profiling","children":[],"payload":{"lines":"209,210"}},{"content":"Optimization","children":[],"payload":{"lines":"210,211"}},{"content":"Caching","children":[],"payload":{"lines":"211,212"}},{"content":"Async/Await","children":[],"payload":{"lines":"212,214"}}],"payload":{"lines":"208,209"}},{"content":"Security","children":[{"content":"Input Validation","children":[],"payload":{"lines":"215,216"}},{"content":"Authentication","children":[],"payload":{"lines":"216,217"}},{"content":"Authorization","children":[],"payload":{"lines":"217,218"}},{"content":"Data Protection","children":[],"payload":{"lines":"218,219"}}],"payload":{"lines":"214,215"}}],"payload":{"lines":"201,202"}}],"payload":{"lines":"0,1"}},{})</script>
 </body>
 </html>
