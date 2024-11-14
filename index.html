@@ -4,22 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
+<title>Rich and Hobbo Python Map</title>
 <style>
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 #mindmap {
   display: block;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 120px);
+  margin-top: 60px;
 }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
 </head>
 <body>
+<header>
+  <h1>Production Data Analysis Mindmap</h1>
+</header>
+
 <svg id="mindmap"></svg>
+
+<footer>
+  <p>© 2024 Production Data Analysis Tool</p>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
                 setTimeout(r);
               })(() => {
